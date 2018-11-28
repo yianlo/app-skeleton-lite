@@ -1,0 +1,23 @@
+{
+  "name": "app-skeleton-lite",
+  "version": "1.0.0",
+  "description": "A demo app skeleton",
+  "main": "src/index.js",
+  "author": "Yian Lo",
+  "scripts": {
+    "build-css": "node-sass src/stylesheets/index.sass src/index.css",
+    "start-server": "http-server ./ -o",
+    "start": "npm install --production && npm run start-server",
+    "test": "NODE_ENV=test jest",
+    "test-watch": "NODE_ENV=test jest --watchAll"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
